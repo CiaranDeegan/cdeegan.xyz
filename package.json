@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/CiaranDeegan/cdeegan.xyz/issues"
   },
-  "homepage": "https://github.com/CiaranDeegan/cdeegan.xyz#readme"
+  "homepage": "https://github.com/CiaranDeegan/cdeegan.xyz#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "path": "^0.12.7"
+  }
 }
