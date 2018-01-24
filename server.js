@@ -3,7 +3,6 @@ const http = require('http'),
 	fs = require('fs'),
 	express = require('express'),
 	bodyParser = require('body-parser');
-	appRoutes = require('./routes/app'),
 	config = require('./config');
 
 const app = express();
@@ -36,9 +35,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //Point to static asset directory
 app.use(express.static('public'));
-
-//Define routes
-app.use('/', appRoutes);
 
 //Start server
 httpServer.listen(config.http_port, function(){
