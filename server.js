@@ -13,8 +13,8 @@ httpServer = http.createServer(app);
 
 try {
 	//load certification files
-	var privateKey  = fs.readFileSync('/etc/letsencrypt/live/swaps.tf/privkey.pem', 'utf8');
-	var certificate = fs.readFileSync('/etc/letsencrypt/live/swaps.tf/cert.pem', 'utf8');
+	var privateKey  = fs.readFileSync(config.ssl.private_key_path, 'utf8');
+	var certificate = fs.readFileSync(config.ssl.certificate_path, 'utf8');
 	var credentials = {key: privateKey, cert: certificate}
 
 	//create https server
