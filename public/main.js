@@ -9,14 +9,15 @@ var router = new VueRouter({
     component: { template: '<p>Not found</p>' }
   },
   { path: '/', 
-    redirect: '/about' },
+    redirect: '/about' 
+  },
   {
     path: '/about', 
-    component: { template: '<p>About Me</p>' }
+    component: require('./components/About.vue')
   },
   {
     path: '/projects', 
-    component: { template: '<p>My Projects</p>' }
+    component: require('./components/Projects.vue')
   }],
 })
 
