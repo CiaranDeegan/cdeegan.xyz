@@ -3,8 +3,11 @@
         <title>Portfolio Website</title>
     </head>
     <body>
-        <div id='app'>
-            <h1>{{ message }}</h1>
+        <div id='app' v-cloak>
+            <router-link to='about'>About</router-link>
+            <router-link to='projects'>Projects</router-link>
+
+            <router-view></router-view>
         </div>
         <script src='bundle.js'></script>       
     </body>
