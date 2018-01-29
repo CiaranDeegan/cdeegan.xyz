@@ -1,14 +1,30 @@
 <html>
     <head>
         <title>Portfolio Website</title>
+        <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css'>
+        <link rel='stylesheet' type='text/css' href='https://jenil.github.io/bulmaswatch/lumen/bulmaswatch.min.css'>
     </head>
     <body>
         <div id='app' v-cloak>
-            <router-link to='about'>About</router-link>
-            <router-link to='projects'>Projects</router-link>
+            <nav class='navbar'>
+                <div class='navbar-brand'>
+                    <span class='navbar-item'>Test</span>
+                    <div class='navbar-burger' data-target='navMenu'>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class='navbar-menu' id='navMenu'>
+                    <router-link class='navbar-item' active-class='is-active' to='about'>About</router-link>
+                    <router-link class='navbar-item' active-class='is-active' to='projects'>Projects</router-link>
+                </div>
+            </nav>
 
-            <router-view></router-view>
+            <div class='container'>
+                <router-view></router-view>
+            </div>
         </div>
-        <script src='bundle.js'></script>       
+        <script src='js/nav.js'></script>    
+        <script src='js/bundle.js'></script>    
     </body>
 </html>
