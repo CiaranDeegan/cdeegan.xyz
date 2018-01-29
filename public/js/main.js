@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 var router = new VueRouter({
   routes: [{ 
     path: '*', 
-    component: { template: '<p>Not found</p>' }
+    component: require('../components/Error.vue')
   },
   { path: '/', 
     redirect: '/about' 
