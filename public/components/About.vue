@@ -15,7 +15,22 @@
                         </div>
                     </div>
                     <div class='content'>
-                        <p>My name is Ciarán Deegan and I'm a software developer from Ireland.</p>
+                        <span class='tag is-success'>Javascript</span>
+                        <span class='tag is-success'>AngularJS</span>
+                        <span class='tag is-success'>Node.js</span>
+                        <span class='tag is-success'>Vue.js</span>
+                        <span class='tag is-info'>Java</span>
+                        <span class='tag is-info'>C#</span>
+                        <span class='tag is-info'>Python</span>
+                        <span class='tag is-info'>Android Development</span>
+                        <span class='tag is-warning'>SQL Databases</span>
+                        <span class='tag is-warning'>NoSQL Databases</span>
+                        <span class='tag is-danger'>REST APIs</span>
+                        <span class='tag is-danger'>Firebase</span>
+                        <span class='tag is-danger'>AWS</span>
+                        <span class='tag is-danger'>Git</span>
+                        <span class='tag is-danger'>SVN</span>
+                        <br><br><p>My name is Ciarán Deegan and I'm a software developer from Ireland.</p>
                         <p>I have recently relocated to Toronto, Canada on a two-year work permit and I am open to all 
                         software development opportunities.</p>
                         <h4>Computers</h4>
@@ -29,7 +44,7 @@
                         <p>Writing has always been a passion of mine. The height of my literary achievement is a published short
                         story written under the guidance of Roddy Doyle.</p>
                         <h4>Cars</h4>
-                        <p>I obtained my drivers license in 2015 and have enjoyed being behind the wheel ever since. At the time, I had put money aside to buy my first car: a black 2003 Toyota Corolla</p>
+                        <p>I obtained my drivers license in 2015 and have enjoyed being behind the wheel ever since. At the time, I had put money aside to buy my first car: a black 2003 Toyota Corolla.</p>
                     </div>
                 </div>
             </div>
