@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <header class='timeline-header'>
-                    <span class='tag is-primary'>2017</span>
+                    <span class='tag is-primary'>Start of 2018</span>
                 </header>
                 <div class='timeline-item'>
                     <div class='timeline-marker is-info'></div>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <header class='timeline-header'>
-                    <span class='tag is-primary'>2016</span>
+                    <span class='tag is-primary'>Start of 2017</span>
                 </header>
                 <div class='timeline-item'>
                     <div class='timeline-marker is-warning'></div>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <header class='timeline-header'>
-                    <span class='tag is-primary'>2015</span>
+                    <span class='tag is-primary'>Start of 2016</span>
                 </header>
                 <div class='timeline-item'>
                     <div class='timeline-marker is-success'></div>
@@ -105,17 +105,17 @@
                     </div>
                 </div>
                 <header class='timeline-header'>
-                    <span class='tag is-primary'>2013</span>
+                    <span class='tag is-primary'>Start of 2014</span>
                 </header>
                 <div class='timeline-item'>
                     <div class='timeline-marker is-info'></div>
                     <div class='timeline-content'>
                         <p class='heading'>September</p>
-                        <p>Began BSc. Computer Applications at DCU</p>
+                        <p>Began BSc. Computer Applications at Dublin City University</p>
                     </div>
                 </div>
                 <div class='timeline-header'>
-                    <span class='tag is-medium is-primary'>End</span>
+                    <span class='tag is-primary'>Start of 2013</span>
                 </div>
             </div>  
         </div>
