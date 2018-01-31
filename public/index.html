@@ -2,8 +2,10 @@
     <head>
         <title>Portfolio Website</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='shortcut icon' href='img/favicon.png' />
         <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css'>
         <link rel='stylesheet' type='text/css' href='css/bulma.timeline.css'>
+        <link rel='stylesheet' type='text/css' href='https://jenil.github.io/bulmaswatch/journal/bulmaswatch.min.css'>
         <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
     </head>
     <body>
@@ -21,9 +23,8 @@
                     <div class='navbar-menu' id='navMenu'>
                         <router-link class='navbar-item' active-class='is-active' to='about'>About</router-link>
                         <router-link class='navbar-item' active-class='is-active' to='projects'>Projects</router-link>
-                        <!-- Desktop Elements -->
                         <div class='navbar-end'>
-                            <a class='navbar-item is-hidden-touch' href='#' active-class='is-active'>
+                            <a class='navbar-item is-hidden-touch' target='_blank' href='docs/CiaranDeegan_CV.pdf' active-class='is-active'>
                                 <span class='icon'><i class='fas fa-download'></i></span> CV
                             </a>
                             <a class='navbar-item is-hidden-touch' target='_blank' href='https://www.github.com/CiaranDeegan' active-class='is-active'>
@@ -34,19 +35,17 @@
                             </a>
 
                             <div class='navbar-item has-dropdown is-hoverable'>
-                                <div class='navbar-link is-hidden-touch' style='cursor: pointer'>Contact</div>
+                                <div class='navbar-link' style='cursor: pointer'>Contact</div>
                                 <div class='navbar-dropdown is-right'>
-                                    <a class='navbar-item is-hidden-touch' target='_blank' href='mailto:ciaran@cdeegan.xyz' active-class='is-active'>
+                                    <a class='navbar-item' target='_blank' href='mailto:ciaran@cdeegan.xyz' active-class='is-active'>
                                         ciaran@cdeegan.xyz
                                     </a>
-                                    <a class='navbar-item is-hidden-touch' href='tel:647-473-4401' active-class='is-active'>
+                                    <a class='navbar-item' href='tel:647-473-4401' active-class='is-active'>
                                         (+1) 647-473-4401
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <!-- Mobile Elements -->
-                        <a class='navbar-item is-hidden-desktop' href='#' active-class='is-active'>Contact</a>
                     </div>
                 </div>
             </nav>
