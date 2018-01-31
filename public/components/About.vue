@@ -52,24 +52,20 @@
         <div class='column content'>
             <div class='has-text-centered'>
                 <h2>My Timeline</h2>
-                <span class='tag is-warning'>Employment</span>
-                <span class='tag is-info'>Education</span>
-                <span class='tag is-success'>Project</span>
-                <span class='tag is-danger'>Personal</span>
             </div>
             <div class='timeline is-centered section'>
                 <header class='timeline-header'>
                     <span class='tag is-medium is-primary'>Today</span>
                 </header>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-danger'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading is-large'>January</p>
                         <p>Moved to Toronto, Canada</p>
                     </div>
                 </div>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-warning'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading'>January</p>
                         <p>Ended employment at Playprint</p>
@@ -79,21 +75,21 @@
                     <span class='tag is-primary'>Start of 2018</span>
                 </header>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-info'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading'>November</p>
                         <p>Graduated from Dublin City University</p>
                     </div>
                 </div>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-success'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading'>September</p>
                         <p>Launched <a target='_blank' href='https://swaps.tf'>swaps.tf</a> website</p>
                     </div>
                 </div>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-success'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading'>April</p>
                         <p>Completed development of Lens Android app</p>
@@ -103,7 +99,7 @@
                     <span class='tag is-primary'>Start of 2017</span>
                 </header>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-warning'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading'>April</p>
                         <p>Began employment at Playprint</p>
@@ -113,7 +109,7 @@
                     <span class='tag is-primary'>Start of 2016</span>
                 </header>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-success'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading'>November</p>
                         <p>Completed development of Steam trading bot project</p>
@@ -123,7 +119,7 @@
                     <span class='tag is-primary'>Start of 2014</span>
                 </header>
                 <div class='timeline-item'>
-                    <div class='timeline-marker is-info'></div>
+                    <div class='timeline-marker'></div>
                     <div class='timeline-content'>
                         <p class='heading'>September</p>
                         <p>Began BSc. Computer Applications at Dublin City University</p>
