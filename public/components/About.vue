@@ -34,7 +34,7 @@
                         <p>I have recently relocated to Toronto, Canada on a two-year work permit and I am open to all 
                         software development opportunities.</p>
                         <h4>Computers</h4>
-                        <p>I was introduced to my first laptop at age thirteen. Two years later, I was designing web components in Photoshop and writing automated Windows scripts</p>
+                        <p>I was introduced to my first laptop at age thirteen. Two years later, I was designing web components in Photoshop and writing automated Windows scripts.</p>
                         <p>I saved up for the individual parts to build a desktop computer of my own, which is now my daily PC at home.</p>
                         <p>This curiosity in computers naturally guided me towards an education and a career in computing.</p>
                         <h4>Travel</h4>
