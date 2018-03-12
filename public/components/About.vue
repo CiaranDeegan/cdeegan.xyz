@@ -30,7 +30,8 @@
                         <span class='tag is-danger'>AWS</span>
                         <span class='tag is-danger'>Git</span>
                         <span class='tag is-danger'>SVN</span>
-                        <br><br><p>My name is Ciarán Deegan and I'm a software developer from Ireland.</p>
+                        <br><br>
+                        <p>My name is Ciarán Deegan and I'm a software developer from Ireland.</p>
                         <p>I have recently relocated to Toronto, Canada on a two-year work permit and I am open to all 
                         software development opportunities.</p>
                         <h4>Computers</h4>
@@ -45,6 +46,7 @@
                         story written under the guidance of Roddy Doyle.</p>
                         <h4>Cars</h4>
                         <p>I obtained my drivers license in 2015 and have enjoyed being behind the wheel ever since. At the time, I had put money aside to buy my first car: a black 2003 Toyota Corolla.</p>
+                        <blockquote>No fear of failure, only excitement for success.</blockquote>
                     </div>
                 </div>
             </div>
