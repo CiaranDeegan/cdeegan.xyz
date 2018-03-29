@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify public/main.js -o public/bundle.js"
+    "build": "browserify -t vueify -p tinyify public/js/main.js -o public/js/bundle.js"
   },
   "browser": {
     "vue": "vue/dist/vue.common.js"
