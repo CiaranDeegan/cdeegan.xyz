@@ -34,6 +34,11 @@
     "http": "0.0.0",
     "https": "^1.0.0",
     "vue": "^2.5.13",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "tinyify": "^2.4.0",
     "vueify": "^9.4.1"
   }
 }
