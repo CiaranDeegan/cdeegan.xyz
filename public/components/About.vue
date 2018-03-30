@@ -32,8 +32,8 @@
                         <span class='tag is-danger'>SVN</span>
                         <br><br>
                         <p>My name is Ciarán Deegan and I'm a software developer from Ireland.</p>
-                        <p>I have recently relocated to Toronto, Canada on a two-year work permit and I am open to all 
-                        software development opportunities.</p>
+                        <p>I believe in living outside my comfort zone -- for me that is where I learn the most about myself. In 2018 I moved out and to a new country, from Ireland to Canada, where I discovered some new passions and some amazing people.</p>
+                        <p>My next goal is to develop myself professionally, by finding a job in which I can meet my career growth aims.</p>
                         <h4>Computers</h4>
                         <p>I was introduced to my first laptop at age thirteen. Two years later, I was designing web components in Photoshop and writing automated Windows scripts.</p>
                         <p>I saved up for the individual parts to build a desktop computer of my own, which is now my daily PC at home.</p>
@@ -46,7 +46,7 @@
                         story written under the guidance of Roddy Doyle.</p>
                         <h4>Cars</h4>
                         <p>I obtained my drivers license in 2015 and have enjoyed being behind the wheel ever since. At the time, I had put money aside to buy my first car: a black 2003 Toyota Corolla.</p>
-                        <blockquote>No fear of failure, only excitement for success.</blockquote>
+                        <blockquote>"Normality is a paved road: It’s comfortable to walk, but no flowers grow on it." ― Vincent van Gogh</blockquote>
                     </div>
                 </div>
             </div>
