@@ -12,5 +12,5 @@ Vue.config.productionTip = false;
 
 new Vue({
 	render: h => h(App),
-	router: new VueRouter({ routes })
+	router: new VueRouter({ routes, linkActiveClass: 'is-active' })
 }).$mount('#app');
