@@ -9,6 +9,9 @@
 					<router-link class="navbar-item" to="/projects" exact>
 						Projects
 					</router-link>
+					<router-link class="navbar-item" to="/contact" exact>
+						Contact
+					</router-link>
 				</div>
 			</div>
 		</div>
