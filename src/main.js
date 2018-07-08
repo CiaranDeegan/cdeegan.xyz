@@ -6,7 +6,7 @@ import './assets/scss/app.scss';
 import App from './App.vue';
 
 Vue.use(Buefy);
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 Vue.config.productionTip = false;
 
