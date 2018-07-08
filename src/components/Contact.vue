@@ -1,15 +1,65 @@
 <template>
 	<div class="contact">
-		<h1>Contact</h1>
+		<section class="buttons is-centered">
+			<a class="button is-large is-info" href="https://linkedin.com/in/ciarandeegan" target="_blank">
+				<span class="icon is-large">
+					<b-icon pack="fab" icon="linkedin"/>
+				</span>
+			</a>
+			<a class="button is-large" href="https://github.com/CiaranDeegan" target="_blank">
+				<span class="icon is-large">
+					<b-icon pack="fab" icon="github"/>
+				</span>
+			</a>
+			<a class="button is-large" href="mailto:ciaran@cdeegan.xyz" target="_blank">
+				<span class="icon is-large">
+					<b-icon icon="email"/>
+				</span>
+			</a>
+		</section>
+		<section>
+			<h1 class="title is-5">Send me a message</h1>
+			<p class="subtitle is-italic is-size-7">messages will be sent to ciaran@cdeegan.xyz</p>
+			<b-field grouped>
+				<b-input v-model="form.name" name="name" placeholder="Name" expanded/>
+				<b-input v-model="form.email" name="email" placeholder="Email Address" expanded/>
+			</b-field>
+
+			<b-field>
+				<b-input v-model="form.message" type="textarea"/>
+			</b-field>
+
+			<button class="button is-primary" @click="sendMessage">Send Message</button>
+		</section>
 	</div>
 </template>
 
 <script>
 export default {
-	
+	data() {
+		return {
+			form: {
+				name: '',
+				email: '',
+				message: ''
+			}
+		}
+	},
+	methods: {
+		sendMessage: function() {
+			console.log(this.form);
+			this.form = {
+				name: '',
+				email: '',
+				message: ''
+			}
+		}
+	}
 }
 </script>
 
 <style lang="scss" scoped>
-
+	button {
+		width: 100%;
+	}
 </style>
