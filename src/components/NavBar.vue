@@ -1,7 +1,14 @@
 <template>
 	<nav class="navbar">
 		<div class="container">
-			<div class="navbar-menu">
+			<div class="navbar-brand">
+				<div :class="{ 'is-active': mobileMenuActive }" class="navbar-burger" @click="toggleMobileNav">
+					<span aria-hidden="true"/>
+					<span aria-hidden="true"/>
+					<span aria-hidden="true"/>
+				</div>
+			</div>
+			<div :class="{ 'is-active': mobileMenuActive }" class="navbar-menu">
 				<div class="navbar-start">
 					<router-link class="navbar-item" to="/" exact>
 						Home
@@ -20,7 +27,17 @@
 
 <script>
 export default {
-	name: 'NavBar'
+	name: 'NavBar',
+	data() {
+		return {
+			mobileMenuActive: false
+		}
+	},
+	methods: {
+		toggleMobileNav: function() {
+			this.mobileMenuActive = !this.mobileMenuActive;
+		}
+	}
 }
 </script>
 
