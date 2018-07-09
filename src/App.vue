@@ -28,7 +28,7 @@ export default {
 	text-align: center;
 	color: #2c3e50;
 	.router {
-		margin: 3em 0 3em 0;
+		margin: 3em 1em 3em 1em;
 	}
 }
 </style>
