@@ -1,14 +1,22 @@
 <template>
 	<div class="projects">
-		<h1>Projects</h1>
-		<h2>Content</h2>
-		<p>More content <b>in bold</b></p>
+		<ProjectDetails v-for="project in projects" :key="project" :project="project"/>
 	</div>
 </template>
 
 <script>
+import ProjectDetails from './ProjectDetails';
+
 export default {
-	name: 'Projects'
+	name: 'Projects',
+	components: {
+		ProjectDetails
+	},
+	data() {
+		return {
+			projects : ['cdeegan.xyz', 'Lens', 'swaps.tf']
+		}
+	}
 }
 </script>
 
