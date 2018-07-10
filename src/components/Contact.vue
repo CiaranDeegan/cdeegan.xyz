@@ -18,18 +18,24 @@
 			</a>
 		</section>
 		<section>
-			<h1 class="title is-5">Send me a message</h1>
-			<p class="subtitle is-italic is-size-7">messages will be sent to ciaran@cdeegan.xyz</p>
-			<b-field grouped>
-				<b-input v-model="form.name" name="name" placeholder="Name" expanded/>
-				<b-input v-model="form.email" name="email" placeholder="Email Address" expanded/>
-			</b-field>
+			<form id="contact-form" @submit.prevent="submitForm">
+				<h1 class="title is-5">Send me a message</h1>
+				<p class="subtitle is-italic is-size-7">messages will be sent to ciaran@cdeegan.xyz</p>
+				<b-field grouped>
+					<b-field label="Name" expanded>
+						<b-input v-model="form.name" name="name" placeholder="Name"/>
+					</b-field>
+					<b-field label="Email" expanded>
+						<b-input v-model="form.email" name="email" placeholder="Email Address"/>
+					</b-field>
+				</b-field>
 
-			<b-field>
-				<b-input v-model="form.message" type="textarea"/>
-			</b-field>
+				<b-field label="Message">
+					<b-input v-model="form.message" type="textarea"/>
+				</b-field>
 
-			<button class="button is-primary" @click="sendMessage">Send Message</button>
+				<button type="submit" class="button is-primary">Send Message</button>
+			</form>
 		</section>
 	</div>
 </template>
@@ -46,7 +52,7 @@ export default {
 		}
 	},
 	methods: {
-		sendMessage: function() {
+		submitForm: function() {
 			console.log(this.form);
 			this.form = {
 				name: '',
