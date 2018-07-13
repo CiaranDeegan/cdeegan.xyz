@@ -21,7 +21,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	.tags {
-		display: inline-block;
+	.box {
+		margin: 2em;
+		.tags {
+			display: inline-block;
+		}
 	}
 </style>
