@@ -1,11 +1,12 @@
 <template>
 	<div class="projects">
-		<ProjectDetails v-for="project in projects" :key="project" :project="project"/>
+		<ProjectDetails v-for="project in projects" :key="project.name" :project="project"/>
 	</div>
 </template>
 
 <script>
 import ProjectDetails from './ProjectDetails';
+import ProjectsJSON from '../assets/json/projects.json';
 
 export default {
 	name: 'Projects',
@@ -14,8 +15,11 @@ export default {
 	},
 	data() {
 		return {
-			projects : ['cdeegan.xyz', 'Lens', 'swaps.tf']
+			projects : []
 		}
+	},
+	created() {
+		this.projects = ProjectsJSON.projects;
 	}
 }
 </script>
