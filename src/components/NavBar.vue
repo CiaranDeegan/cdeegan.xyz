@@ -11,7 +11,7 @@
 			<div :class="{ 'is-active': mobileMenuActive }" class="navbar-menu">
 				<div class="navbar-start">
 					<router-link class="navbar-item" to="/" exact>
-						Home
+						About Me
 					</router-link>
 					<router-link class="navbar-item" to="/projects" exact>
 						Projects

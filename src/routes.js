@@ -1,9 +1,9 @@
 import Projects from './components/Projects';
-import Resume from './components/Resume';
+import About from './components/About';
 import Contact from './components/Contact';
 
 const routes = [
-	{ path: '/', component: Resume },
+	{ path: '/', component: About },
 	{ path: '/projects', component: Projects },
 	{ path: '/contact', component: Contact }
 ];
