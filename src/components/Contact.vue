@@ -1,7 +1,7 @@
 <template>
 	<div class="contact">
 		<div class="card">
-			<section class="buttons is-centered">
+			<div class="buttons is-centered">
 				<a class="button is-large is-info" href="https://linkedin.com/in/ciarandeegan" target="_blank">
 					<span class="icon is-large">
 						<b-icon pack="fab" icon="linkedin"/>
@@ -17,8 +17,8 @@
 						<b-icon icon="email"/>
 					</span>
 				</a>
-			</section>
-			<section>
+			</div>
+			<div>
 				<form id="contact-form" @submit.prevent="submitForm">
 					<h1 class="title is-5">Send me a message</h1>
 					<p class="subtitle is-italic is-size-7">messages will be sent to ciaran@cdeegan.xyz</p>
@@ -37,12 +37,16 @@
 
 					<button type="submit" class="button is-primary">Send Message</button>
 				</form>
-			</section>
+				<b-loading :active.sync="loading" :is-full-page="false"/>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+import axios from 'axios';
+import APIKey from '../assets/json/sendgrid_api_key';
+
 export default {
 	data() {
 		return {
@@ -50,13 +54,53 @@ export default {
 				name: '',
 				email: '',
 				message: ''
-			}
+			},
+			loading: false,
+			sendgridURL: 'https://api.sendgrid.com/v3/mail/send'
 		}
 	},
 	methods: {
 		submitForm: function() {
-			console.log(this.form);
-			this.form = {
+			this.loading = true;
+			const payload = this.buildPayload(this.form);
+			const headers = this.buildHeaders(APIKey.key);
+			axios.post(this.sendgridURL, payload, headers).then(() => {
+				this.$toast.open({
+					message: 'Message successfully sent!',
+					type: 'is-success'
+				});
+				this.form = this.resetForm();
+				this.loading = false;
+			}).catch(() => {
+				this.$toast.open({
+					message: 'Message failed to send! Please try again later.',
+					type: 'is-danger'
+				});
+				this.form = this.resetForm();
+				this.loading = false;
+			});
+
+		},
+		buildHeaders: function(key) {
+			return { 
+				headers: {'Authorization':  'Bearer ' + key }
+			}
+		},
+		buildPayload: function(form) {
+			return {
+				'personalizations': [{
+					'to': [{'email': 'ciarandee@gmail.com' }],
+					'subject': 'cdeegan.xyz Contact Form'		
+				}],
+				'from': { 'email': form.email },
+				'content': [{
+					'type': 'text/plain',
+					'value': form.message
+				}]
+			}
+		},
+		resetForm() {
+			return {
 				name: '',
 				email: '',
 				message: ''
