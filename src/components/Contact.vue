@@ -35,7 +35,7 @@
 						<b-input v-model="form.message" type="textarea"/>
 					</b-field>
 
-					<button type="submit" class="button is-primary">Send Message</button>
+					<button type="submit" class="button is-primary is-fullwidth">Send Message</button>
 				</form>
 				<b-loading :active.sync="loading" :is-full-page="false"/>
 			</div>
@@ -113,8 +113,5 @@ export default {
 <style lang="scss" scoped>
 	.card {
 		padding: 2em;
-	}
-	button {
-		width: 100%;
 	}
 </style>
