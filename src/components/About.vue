@@ -18,6 +18,11 @@
 						<p>I believe in living outside my comfort zone -- for me that is where I learn the most about myself. In 2018 I moved out and to a new country, from Ireland to Canada, where I discovered some new passions and some amazing people.</p>
 						<p>My next goal is to develop myself professionally, by finding a job in which I can meet my career growth aims.</p>
 						<blockquote>"Normality is a paved road: It’s comfortable to walk, but no flowers grow on it." ― Vincent van Gogh</blockquote>
+						<div class="resume-container has-text-centered">
+							<a :href="resumePDF" target="_blank" class="button is-primary is-rounded is-outlined">
+								<b-icon pack="fas" icon="download" size="is-small"/><span>Download Resume</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -26,6 +31,8 @@
 </template>
 
 <script>
+import ResumePDF from '../assets/pdf/CiaranDeegan_CV.pdf';
+
 export default {
 	name: 'Resume',
 	data() {
@@ -38,7 +45,8 @@ export default {
 				"Android Development",
 				"MySQL",
 				"NoSQL",
-			]
+			],
+			resumePDF: ResumePDF
 		}
 	}
 }
