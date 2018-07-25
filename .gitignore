@@ -1,8 +1,17 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Editor directories and files
+.idea
 .vscode
-/node_modules/
-config.js
-public/js/bundle.js
-*.bat
-*.mp4
-*.jpg
-*.pdf
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# API Keys
+src/assets/json/*_api_key.json
+src/assets/videos

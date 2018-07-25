@@ -1,44 +1,42 @@
 {
-  "name": "cdeegan.xyz",
-  "version": "1.0.0",
-  "description": "personal portfolio website",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -t vueify -p tinyify public/js/main.js -o public/js/bundle.js"
-  },
-  "browser": {
-    "vue": "vue/dist/vue.common.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/CiaranDeegan/cdeegan.xyz.git"
-  },
-  "keywords": [
-    "portfolio",
-    "website",
-    "vue",
-    "javascript",
-    "nodejs"
-  ],
-  "author": "Ciaran Deegan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CiaranDeegan/cdeegan.xyz/issues"
-  },
-  "homepage": "https://github.com/CiaranDeegan/cdeegan.xyz#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "fs": "0.0.1-security",
-    "http": "0.0.0",
-    "https": "^1.0.0",
-    "vue": "^2.5.13",
-    "vue-router": "^3.0.1"
-  },
-  "devDependencies": {
-    "browserify": "^16.1.1",
-    "tinyify": "^2.4.0",
-    "vueify": "^9.4.1"
-  }
+	"name": "cdeegan.xyz",
+	"description": "A portfolio website",
+	"version": "1.0.0",
+	"author": "Ciaran Deegan <ciaran@cdeegan.xyz>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+		"build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+	},
+	"dependencies": {
+		"axios": "^0.18.0",
+		"buefy": "^0.6.6",
+		"chunk": "0.0.2",
+		"vue": "^2.5.11",
+		"vue-router": "^3.0.1"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not ie <= 8"
+	],
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-eslint": "^8.2.6",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-stage-3": "^6.24.1",
+		"cross-env": "^5.0.5",
+		"css-loader": "^0.28.7",
+		"eslint": "^5.2.0",
+		"eslint-plugin-vue": "^4.7.0",
+		"file-loader": "^1.1.4",
+		"node-sass": "^4.5.3",
+		"sass-loader": "^6.0.6",
+		"vue-loader": "^13.0.5",
+		"vue-template-compiler": "^2.4.4",
+		"webpack": "^3.6.0",
+		"webpack-dev-server": "^2.9.1"
+	}
 }
