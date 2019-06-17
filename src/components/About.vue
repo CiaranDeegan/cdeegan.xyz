@@ -15,7 +15,7 @@
 				<div class="column is-three-quarters has-text-left content">
 					<div class="content">
 						<p>My name is Ciarán Deegan and I'm an Irish software developer currently living in Toronto, Canada.</p>
-						<p>I believe in continuously improving and learing about myself, which is why I'm always open to new challenges and experiences.</p>
+						<p>I believe in continuously improving and learning about myself, which is why I'm always open to new challenges and experiences.</p>
 						<blockquote>"Normality is a paved road: It’s comfortable to walk, but no flowers grow on it." ― Vincent van Gogh</blockquote>
 						<div class="resume-container has-text-centered">
 							<a :href="resumePDF" target="_blank" class="button is-primary is-rounded is-outlined">
